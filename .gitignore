@@ -1,0 +1,6 @@
+.fusion/
+.pi/
+.worktrees/
+fusion.db
+fusion.db-wal
+fusion.db-shm
