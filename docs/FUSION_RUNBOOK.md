@@ -17,3 +17,7 @@
 
 ## Anonymous free models
 - Not compatible with Fusion v0.77.0 agent runtime as-is. Use a provider with valid auth (API key/OAuth/CLI) or local model server.
+
+## Free provider recommendations
+- OpenRouter (recommended for compatibility): requires API key; no payment needed for free models. Add as OpenAI-compatible custom provider with baseUrl https://openrouter.ai/api/v1.
+- Local llama.cpp: free, no external API; needs installation. Check CPU/RAM limits (Codespaces: 2 CPUs, 7.8GB). May be slow for larger models.
