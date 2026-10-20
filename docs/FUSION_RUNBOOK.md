@@ -14,3 +14,6 @@
 
 ## Troubleshooting
 - If model auth fails, verify custom provider is configured and model ids match exactly. Anonymous free models require no API key.
+
+## Anonymous free models
+- Not compatible with Fusion v0.77.0 agent runtime as-is. Use a provider with valid auth (API key/OAuth/CLI) or local model server.

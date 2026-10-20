@@ -12,3 +12,6 @@
 
 ## Issues encountered
 - Fusion created and attempted to run task KB-001; planning failed with "No API key found for the selected model" despite anonymous base URL. This appears to be how Fusion's agent runtime authenticates requests (it may not honor empty apiKey for anonymous endpoints as expected). Further investigation would require checking Fusion's provider auth logic.
+
+## Verified limitation
+- Anonymous free models work at HTTP level, but Fusion v0.77.0 agent runtime (pi-coding-agent) requires API key resolution for the selected provider/model path; custom provider with empty apiKey is not accepted for task execution. Attempted with new custom provider and task KB-002 - failed same way.
