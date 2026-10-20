@@ -15,3 +15,9 @@
 
 ## Verified limitation
 - Anonymous free models work at HTTP level, but Fusion v0.77.0 agent runtime (pi-coding-agent) requires API key resolution for the selected provider/model path; custom provider with empty apiKey is not accepted for task execution. Attempted with new custom provider and task KB-002 - failed same way.
+
+## Free provider comparison (updated)
+- Kilo gateway anonymous: HTTP works, but Fusion agent runtime rejects (needs API key) - not compatible.
+- OpenRouter free models: require API key (account needed). Many :free models, supports tools. Compatible with OpenAI-compatible custom provider if key provided.
+- Groq/Cerebras/Fireworks/Together: require API keys (free tiers often exist but still need signup/auth).
+- Local llama.cpp: free/no external API; needs installation + model download. Hardware limited (2 CPUs, 7.8GB RAM) - may be slow.
