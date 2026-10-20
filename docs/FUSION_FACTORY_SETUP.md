@@ -21,3 +21,8 @@
 - OpenRouter free models: require API key (account needed). Many :free models, supports tools. Compatible with OpenAI-compatible custom provider if key provided.
 - Groq/Cerebras/Fireworks/Together: require API keys (free tiers often exist but still need signup/auth).
 - Local llama.cpp: free/no external API; needs installation + model download. Hardware limited (2 CPUs, 7.8GB RAM) - may be slow.
+
+## Working configuration
+- OpenRouter configured as custom provider (id dd937eef-...) with API key in Fusion settings.
+- Project lanes set to custom:dd937eef-... / minimax/minimax-m3.1-flash:free.
+- End-to-end test KB-003 created/ran via Fusion: generated ./calculator/ with calc.py, test_calc.py, README.md; tests passed.

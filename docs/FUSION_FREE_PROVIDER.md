@@ -21,3 +21,9 @@
 - Kilo gateway anonymous: works directly via curl for free models and supports tools, but Fusion runtime (pi-coding-agent v0.77.0) requires API key resolution for the selected provider/model path; cannot use anonymous endpoints with custom provider in this Fusion version.
 
 Recommendation: If you need free task execution through Fusion, the simplest path is OpenRouter with a free API key. No payment required to obtain key; many free models available. Alternatively, set up local llama.cpp if you want to avoid any cloud provider; however that requires installing/running a server.
+
+## OpenRouter configuration (current)
+- Provider: OpenRouter (custom, OpenAI-compatible), baseUrl https://openrouter.ai/api/v1
+- Model configured: minimax/minimax-m3.1-flash:free (free model, supports tools)
+- Auth: API key stored in Fusion settings (local), not committed
+- Verified: direct API test passed (chat/completions with tool-capable free model). Fusion task KB-003 executed end-to-end and passed tests.

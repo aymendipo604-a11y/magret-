@@ -21,3 +21,8 @@
 ## Free provider recommendations
 - OpenRouter (recommended for compatibility): requires API key; no payment needed for free models. Add as OpenAI-compatible custom provider with baseUrl https://openrouter.ai/api/v1.
 - Local llama.cpp: free, no external API; needs installation. Check CPU/RAM limits (Codespaces: 2 CPUs, 7.8GB). May be slow for larger models.
+
+## Working with OpenRouter
+- Provider configured in Fusion settings (OpenAI-compatible). Key stored securely in settings, not in repo.
+- To restart: run `npx --yes runfusion.ai` as before; check logs for port/token.
+- Create tasks via Fusion API/UI; ensure model lanes point to OpenRouter free model.
