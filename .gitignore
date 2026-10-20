@@ -4,3 +4,8 @@
 fusion.db
 fusion.db-wal
 fusion.db-shm
+backups/*.enc
+backups/*.gpg
+backups/*.tar.gz
+backups/*.sha256
+
